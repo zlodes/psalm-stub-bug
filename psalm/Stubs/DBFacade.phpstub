@@ -1,0 +1,22 @@
+<?php
+
+namespace Illuminate\Support\Facades;
+
+use Closure;
+
+class DB extends Facade
+{
+    /**
+     * @template T
+     *
+     * @param Closure $closure
+     * @param int $attempts
+     * @psalm-param Closure(): T $closure
+     *
+     * @psalm-return T
+     */
+    public static function transaction(Closure $closure, int $attempts = 1)
+    {
+        //
+    }
+}
